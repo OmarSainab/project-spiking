@@ -1,0 +1,29 @@
+GET http://localhost:9000/habits
+
+###
+
+GET http://localhost:9000/habits/65046949b72203c369df0833
+
+###
+
+POST http://localhost:9000/habits
+Content-Type: application/json
+
+{
+    "name": "go for walk",
+    "priority": 2
+}
+
+###
+
+DELETE  http://localhost:9000/habits/65046277ed9a71127121af17
+
+###
+
+PATCH  http://localhost:9000/habits/65046de1a90f067bed196979
+Content-Type: application/json
+
+{
+    "name": "New habit",
+    "priority": 1
+}
